@@ -6,8 +6,12 @@
         </encoder>
     </appender>
 
-    <logger name="ch.juventus.example" level="">
+    <logger name="ch.juventus.example" level="debug">
+        <appender-ref ref="console" />
+    </logger>
 
+    <logger name="org.springframework.aop" level="debug">
+        <appender-ref ref="console" />
     </logger>
 
     <root level="info">
