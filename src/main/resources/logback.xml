@@ -7,11 +7,9 @@
     </appender>
 
     <logger name="ch.juventus.example" level="debug">
-        <appender-ref ref="console" />
     </logger>
 
-    <logger name="org.springframework.aop" level="debug">
-        <appender-ref ref="console" />
+    <logger name="org.springframework.aop" level="trace">
     </logger>
 
     <root level="info">

@@ -18,3 +18,6 @@ Um mit dieser Übung arbeiten zu können, solltest Du cURL installieren.
 Hinweis: Mit `curl -v ...` werden die Details der Kommunikation via HTTP angezeigt.
 
 ## Aufgaben
+
+- erzeuge annotation
+- erzeuge logger advice
