@@ -83,4 +83,14 @@ public class Employee extends ResourceSupport {
     public int hashCode() {
         return stid != null ? stid.hashCode() : 0;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "stid=" + stid +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", department=" + department +
+                '}';
+    }
 }

@@ -68,4 +68,13 @@ public class Department extends ResourceSupport {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "stid=" + stid +
+                ", name='" + name + '\'' +
+                ", employees=" + employees +
+                '}';
+    }
 }
