@@ -2,7 +2,6 @@ package ch.juventus.example.web;
 
 import ch.juventus.example.data.Department;
 import ch.juventus.example.data.DepartmentRepository;
-import ch.juventus.example.logging.AuditLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +13,6 @@ import java.util.stream.Collectors;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
-@AuditLog
 @RestController
 public class DepartmentController {
     private DepartmentRepository departmentRepository;

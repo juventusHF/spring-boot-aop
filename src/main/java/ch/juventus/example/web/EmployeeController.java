@@ -2,7 +2,6 @@ package ch.juventus.example.web;
 
 import ch.juventus.example.data.Employee;
 import ch.juventus.example.data.EmployeeRepository;
-import ch.juventus.example.logging.AuditLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +10,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
-@AuditLog
 @RestController
 public class EmployeeController {
 
