@@ -50,7 +50,7 @@ public class EmployeeController {
 
     @DeleteMapping("/employees/{id}")
     public void delete(@PathVariable Long id) {
-        employeeRepository.delete(id);
+        employeeRepository.deleteById(id);
     }
 
 }

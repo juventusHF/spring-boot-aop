@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 public class DepartmentController {
@@ -31,7 +31,7 @@ public class DepartmentController {
 
     @GetMapping("/departments/{id}")
     public Department get(@PathVariable Long id) {
-        return addHateoasLinks(departmentRepository.findOne(id));
+        return addHateoasLinks(departmentRepository.findById(id).get());
     }
 
     public Department addHateoasLinks(Department department) {
